@@ -1,12 +1,12 @@
 # EIP Session-5 Assignment
 Assignment:
 
-    Find 50 misclassified images from your Session 4 submission model
-    Run GradCam (http://www.hackevolve.com/where-cnn-is-looking-grad-cam/) on these images
-    Create a gallery of your GradCam results
-    Upload your Colab file to a public github repo, and
-    Upload your GitHub Link here: https://tinyurl.com/yxt6x2qq (https://tinyurl.com/yxt6x2qq)
-    You need to attempt this quiz before the next session starts: https://tinyurl.com/y2t2ux8z (https://tinyurl.com/y2t2ux8z)
+    1. Find 50 misclassified images from your Session 4 submission model
+    2. Run GradCam (http://www.hackevolve.com/where-cnn-is-looking-grad-cam/) on these images
+    3. Create a gallery of your GradCam results
+    4. Upload your Colab file to a public github repo, and
+    5. Upload your GitHub Link here: https://tinyurl.com/yxt6x2qq (https://tinyurl.com/yxt6x2qq)
+    6. You need to attempt this quiz before the next session starts: https://tinyurl.com/y2t2ux8z (https://tinyurl.com/y2t2ux8z)
 
 ## Since session 4 submission was not a proper standard or in some cases where few people have deleted it, ResNet was set as the standard architecture with CIFAR 10 as the stardard dataset.
 
@@ -43,11 +43,11 @@ It is trained on Imagenet and the input shape is configured to 32 x 32 x 3, whic
   Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept (say logits for ‘dog’ or even a caption), flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept.
 Process:
 
-    Compute the gradient of the class output value with respect to the feature map
-    Pool the gradients over all the axes leaving out the channel dimension
-    Weigh the output feature map with the computed gradient values
-    Average the weighed feature map along the channel dimension resulting in a heat map of size same as the input image
-    Finally normalize the heat map to make the values in between 0 and 1
+    1. Compute the gradient of the class output value with respect to the feature map
+    2. Pool the gradients over all the axes leaving out the channel dimension
+    3. Weigh the output feature map with the computed gradient values
+    4. Average the weighed feature map along the channel dimension resulting in a heat map of size same as the input image
+    5. Finally normalize the heat map to make the values in between 0 and 1
 
 3 funtions are written which returns the activation map from thier respective layers as below:
 
